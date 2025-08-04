@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinmoy | Cinematic Video Editor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+header {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff5c5c;
+  display: flex;
+  align-items: center;
+}
+
+.logo::before {
+  content: "\1F4F8";
+  margin-right: 0.5rem;
+}
+
+main {
+  text-align: center;
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+
+h1 .highlight {
+  color: #ff5c5c;
+}
+
+p {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  color: #cfcfcf;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ff5c5c;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #e64a4a;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-outline:hover {
+  background-color: #ffffff;
+  color: #0a0a0a;
+}
+
+footer {
+  margin-top: 5rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+  </style>
+</head><body>
+  <header>
+    <div class="logo">Chinmoy</div>
+  </header>  <main>
+    <h1>Crafting <span class="highlight">Cinematic</span> Stories<br>Through Video Editing</h1>
+    <p>Transforming raw footage into emotional storytelling experiences with visual magic.</p>
+    <div class="buttons">
+      <button class="btn btn-primary" onclick="viewWork()">View My Work</button>
+      <button class="btn btn-outline" onclick="contactMe()">Get In Touch</button>
+    </div><section id="about">
+  <h2 style="margin-top: 4rem; font-size: 1.6rem; color: #fff;">🎬 About Me</h2>
+  <p>A passionate editor who creates cinematic reels and emotional storytelling edits using After Effects and Alight Motion.</p>
+</section>
+
+<section id="contact">
+  <h2 style="margin-top: 4rem; font-size: 1.6rem; color: #fff;">📞 Contact</h2>
+  <p>Email: <a href="mailto:yourname@gmail.com" style="color: #ff5c5c;">yourname@gmail.com</a></p>
+  <p>Instagram: <a href="https://instagram.com/yourhandle" target="_blank" style="color: #ff5c5c;">@yourhandle</a></p>
+</section>
+
+  </main>  <footer>
+    <p>&copy; 2025 Chinmoy. All rights reserved.</p>
+  </footer>  <script>
+    function viewWork() {
+      alert("Redirecting to portfolio showcase...");
+      window.location.href = "#about";
+    }
+
+    function contactMe() {
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script></body></html>
